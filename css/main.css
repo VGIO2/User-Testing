@@ -1,53 +1,83 @@
 /**{outline: red solid 1px;}*/
 /*------------------------------------------------------------------------------------HEADER*/
-header{
-    background-image: url(../image/large.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 600px; 
+header
+{
+	background: url(../image/large.jpg);
+	background-size: cover;
+	color: #FFF;
 }
-header, .header-banner{
-    color: white;
+header a{
+	color: #FFF;
 }
-.fondonegro{
-    height: 600px;
-    background-color: rgba(0,0,0,0.3);
-    padding-top: 60px;
-}
-.list-inline{
-    margin-left: 140px;
+.menu-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
     padding: 10px;
+    width: 100%;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+    background: #3B5998;
 }
-header nav ul li a{
-    font-size: 18px;
-    padding-left: 20px;
-    color: white;
+nav li a{
+	display: block;
+	padding: 15px 15px;
+	transition: all 0.2s;
+	border-radius: 6px;
 }
-header nav ul li a:hover{
-    text-decoration: none;
-    color: #98cbdb;
-    background-color: #f5f9fd;
-    padding-left: 5px;
-    padding: 10px;
+nav li a:hover, nav li a:focus{
+	text-decoration: none;
+	outline: none;
+	background: #a2caf0;
+	border-bottom: 4px solid #3f85c6;
 }
-.frase h2{
-    font-size: 40px;
-    margin-top: 140px;
+
+#main-navigation
+{
+	z-index: 1;
+	position: absolute;
+	left:  0px;
+	margin: 10px 0 0 0;
 }
-.header-banner{
-    background-color: rgba(84,126,183,0.8);
-    margin-top: 138px;
-    padding: 13px;
+#main-navigation ul
+{
+	background: rgba(0,0,0,0.5);
+	list-style: none;
+	padding: 50px;
+	border-radius: 5px;
+
 }
-button{
-    background-color: rgba(84,126,183,0.8);
-    border:solid 1px white;
-    padding: 10px 40px;
-    font-size: 20px;
-    margin-top: 15px;
+.logo
+{
+	margin-top: 12px;
 }
-.header-banner p{
-    font-size: 12px;
+.frase
+{
+	margin: 100px 0;
+	text-align: center;
+}
+.fondo-azul
+{
+	background: rgba(90, 107, 136, 0.6);
+	padding-top: 10px ;
+}
+.header-banner
+{
+	background: rgba(87, 149, 255, 0.79);
+	padding: 30px 0;
+}
+.header-banner h3
+{
+	margin: 0;
+}
+.banner-button
+{
+	background: none;
+	border:1px solid #FFF;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-size: 20px;
+
 }
 /*------------------------------------------------------------------------------------SERVICES*/
 .services{
@@ -74,13 +104,16 @@ button{
 }
 /*---------------------------------------------------------SEPARADOR
 */
-hr{
-    margin-top: 130px;
+.vertical-divider
+{
+	border-top:1px solid #CCC;
+	text-align: center;
 }
-.separador{
-    position: relative;
-    top: -70px;
-    left: 500px;
+.vertical-divider img
+{
+	position: absolute;
+	z-index: 1;
+	transform: translateY(-50%) translateX(-50%);
 }
 /*------------------------------------------------------------------------------------VIDEO.*/
 .ejemplo h2{
@@ -97,38 +130,44 @@ hr{
     margin: 40px;
 }
 /*------------------------------------------------------------------------------------PASOS.*/
-.pasos{
-    margin-top: 40px;
-    margin-bottom: -490px;
-}
-.pasos .img-responsive{
-    height: 480px;
-    opacity: 0.3
-}
-.fondo{
-    background-color: #4d4949;
-}
-.texto{
-    margin-left: 45px;
+.services, .ejemplo{
+	margin: 100px 0;
 }
 
-.pasos h4{
-    color: #98cbdb;
-    margin-top: 35px;
+.pasos .row{
+	background: url(../image/sec-2.jpg) left center;
+	background-size: contain;
 }
-.iconos-pasos{
-    width: 60px;
-    height:60px;
-    line-height: 60px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 100%;
-    color: white;
-    background-color: #50bdea;
-    position: relative;
-    top: -450px;
-    left: 530px;
-    margin-top: 60px;
+.pasos .col-pasos-info
+{
+	background: #FFF;
+}
+.pasos .pasos-info
+{
+	background: #FFF;
+	padding: 5px;
+	margin: 0 0 0 30px;
+}
+.step1, .step2, .step3
+{
+	position: relative;
+}
+.step3
+{
+	margin-bottom: 50px;
+}
+
+.icon-blue
+{
+	border-radius:40px;
+	background: #299ff4;
+	padding: 10px;
+	font-size: 25px;
+	color: #FFF;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	margin-left: -75px;
 }
 /*------------------------------------------------------------------------------------RAZONES DE USARLO.*/
 .razones h2{
